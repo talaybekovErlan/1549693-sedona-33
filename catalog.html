@@ -46,14 +46,14 @@
       <h1>Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная страница</a>
+          <a class="breadcrumbs-item__link" href="index.html">Главная страница</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-item__link" href="catalog.html">Каталог</a>
         </li>
       </ul>
       <form action="https://echo.htmlacademy.ru/" method="get" class="catalog-filter">
-        <fieldset class="catalog-filter-cont">
+        <fieldset class="catalog-filter-field">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -114,18 +114,18 @@
     </header>
     <div class="hostel-roll-filter">
       <h2idden">Список гостиниц</h2>
-      <p class="hostel-number">Найдено гостиниц: 38</p>
-      <select class="select-control">
-        <option value="popular">Сначала популярное</option>
-        <option value="cheap">Сначала дешёвое</option>
-        <option value="expensive">Сначала дорогое</option>
-      </select>
-      <a href="#" class="hostel-roll-list">
-        <span class="hidden">Показать список</span>
-      </a>
-      <a class="hostel-roll-landscape" href="#">
-        <span class="hidden">Показать карточки</span>
-      </a>
+        <p class="hostel-number">Найдено гостиниц: 38</p>
+        <select class="select-control">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a href="#" class="hostel-roll-list">
+          <span class="hidden">Показать список</span>
+        </a>
+        <a class="hostel-roll-landscape" href="#">
+          <span class="hidden">Показать карточки</span>
+        </a>
     </div>
     <div class="hostel-roll">
       <div class="hostel-card amara-resort-and-spa">
@@ -303,15 +303,15 @@
         </select>
       </div>
     </div>
-    <div class="mailing__content">
+    <div class="mailing">
       <h3 class="mailing__title">Подпишись на рассылку</h3>
       <p class="mailing__description">
         Только полезная информация и никакого спама,
         честное бойскаутское!
       </p>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="mailing__form">
-        <input type="text" name="email" id="mailing__email" placeholder="Ваш e-mail">
-        <button type="submit" class="mailing__btn">Подписаться</button>
+      <form action="https://echo.htmlacademy.ru/" method="post" class="mailing-form">
+        <input type="text" name="email" class="mailing-form__email" placeholder="Ваш e-mail">
+        <button type="submit" class="mailing-formm__btn">Подписаться</button>
       </form>
     </div>
   </main>

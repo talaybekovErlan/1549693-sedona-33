@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/ptsans-400.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/ptsans-700.woff2) format("woff2");
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* LOGO */
+.main-logo {
+  background-image: url("../img/index-bg.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+}
+
+/* HEADER */
+.navigation__link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.navigation__button {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 9px 15px 8px;
+  background-color: #756257;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* DESCRIPTION */
+.description {
+  text-align: center;
+  line-height: 36px;
+}
+
+.description__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.description__causes {
+  font-size: 22px;
+}
+
+/* CAUSE */
+.cause-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.cause__number {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.cause__description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.cause--1-2 {
+  background-color: #83B3D3;
+  color: white
+}
+
+.cause--3-5 {
+  background-color: #83B3D31F;
+}
+
+.cause--4 {
+  background-color: #83B3D333;
+}
+
+/* ADVANTAGES */
+.advantages {
+  background-color: white;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages__item--1-3 {
+  background-color: #83B3D31F;
+}
+
+/* HOTEL */
+.hotel__content{
+    text-align: center;
+}
+.hotel__title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+.hotel__description{
+    font-size: 22px;
+    line-height: 26px;
+}
+.hotel__link{
+    background-color: #756257;
+    padding: 15px 150px;
+    font-size: 20px;
+    line-height: 36px;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+/* MAILING */
+.mailing{
+  background-image: url("../img/mailing-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.mailing__email{
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  line-height: 26px;
+  border: none;
+  width: 600px;
+  height: 60px;
+}
+.mailing__btn{
+  border-radius: 0 10px 10px 0;
+  background-color: #83B3D3;
+  border:none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+}
+.mailing__title{
+  color: white;
+}
+.mailing__description{
+  color: white;
+}
+.mailing__content{
+  text-align: center;
+}

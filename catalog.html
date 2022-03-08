@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>HTML Academy: Седона/Каталог</title>
 </head>
 
@@ -13,7 +14,7 @@
     <nav class="navigation-header">
       <ul class="navigation">
         <li class="navigation__item">
-          <img src="" alt="" class="navigation__logo">
+          <img src="./img/header-logo.svg" alt="Sedona" class="navigation__logo" width="139px" height="70px">
         </li>
         <li class="navigation__item">
           <a href="index.html" class="navigation__link">Главная</a>
@@ -43,13 +44,13 @@
   </header>
   <main class="catalog">
     <header class="catalog-header">
-      <h1>Гостиницы Седоны</h1>
+      <h1 class="catalog-header__title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="index.html">Главная страница</a>
         </li>
         <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+          <a class="breadcrumbs__link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <form action="https://echo.htmlacademy.ru/" method="get" class="catalog-filter">
@@ -76,7 +77,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-filter__cont">
+        <fieldset class="catalog-filter__field">
           <legend class="catalog-filter__title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter__item">
@@ -101,7 +102,7 @@
         </fieldset>
       </form>
       <div class="polzunok">
-        <p>Стоимость, ₽:</p>
+        <p class="polzunok-title">Стоимость, ₽:</p>
         <div class="polzunok-inner">
           <p>от</p>
         </div>
@@ -110,27 +111,27 @@
         <input type="text" class="polzunok-input-right" />
       </div>
       <button type="submit" class="catalog-filter-btn">Применить</button>
-      <button type="submit" class="catalog-filter-btn">Cбросить</button>
+      <button type="submit" class="catalog-filter-btn catalog-filter-btn--reset">Cбросить</button>
     </header>
     <div class="hostel-roll-filter">
-      <h2idden">Список гостиниц</h2>
-        <p class="hostel-number">Найдено гостиниц: 38</p>
-        <select class="select-control">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <a href="#" class="hostel-roll-list">
-          <span class="hidden">Показать список</span>
-        </a>
-        <a class="hostel-roll-landscape" href="#">
-          <span class="hidden">Показать карточки</span>
-        </a>
+      <h2 class="hidden">Список гостиниц</h2>
+      <p class="hostel-number">Найдено гостиниц: 38</p>
+      <select class="select-control">
+        <option value="popular">Сначала популярное</option>
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
+      <a href="#" class="hostel-roll-list">
+        <span class="hidden">Показать список</span>
+      </a>
+      <a class="hostel-roll-landscape" href="#">
+        <span class="hidden">Показать карточки</span>
+      </a>
     </div>
     <div class="hostel-roll">
       <div class="hostel-card amara-resort-and-spa">
-        <a class="hostel-link" href="product.html">
-          <img class="hostel-image" src="" alt="">
+        <a class="hostel-card-link" href="product.html">
+          <img class="hostel-image" src="./img/amara-resort.jpg" width="300px" height="206px">
           <h3 class="hostel-title">Amara Resort & Spa</h3>
         </a>
         <ul class="hostels-list">
@@ -165,8 +166,8 @@
         </ul>
       </div>
       <div class="hostel-card desert-quail-inn">
-        <a class="hostel-link" href="product.html">
-          <img class="hostel-image" src="" alt="">
+        <a class="hostel-card-link" href="product.html">
+          <img class="hostel-image" src="./img/desert-quail.jpg" width="300px" height="206px">
           <h3 class="hostel-title">Desert Quail Inn</h3>
         </a>
         <ul class="hostel-list">
@@ -202,7 +203,7 @@
       </div>
       <div class="hostel-card villas-at-poco-diablo">
         <a class="hostel-card-link" href="product.html">
-          <img class="hostel-image" src="" alt="">
+          <img class="hostel-image" src="./img/villas-at-poco.jpg" width="300px" height="206px">
           <h3 class="hostel-title">Villas at Poco Diablo</h3>
         </a>
         <ul class="hostel-list">
@@ -238,7 +239,7 @@
       </div>
       <div class="hostel-card greentree-inn">
         <a class="hostel-card-link" href="product.html">
-          <img class="hostel-card-image" src="" alt="">
+          <img class="hostel-card-image" src="./img/green-tree.jpg" width="300px" height="206px">
           <h3 class="hostel-card-title">GreenTree Inn</h3>
         </a>
         <ul class="hostel-list">
@@ -271,7 +272,9 @@
             <p class="raintg__number">Рейтинг: 9,2</p>
           </li>
         </ul>
-        <button class="hostel-roll-more">Загрузить ещё</button>
+        <div class="hostel-more-cont">
+          <button class="hostel-roll-more" type="submit">Загрузить ещё</button>
+        </div>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -292,12 +295,12 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-        <select>
+        <select class="contol-hostel-select">
           <p>Гостиниц на странице:</p>
           <option value="number-1">1</option>
           <option value="number-2">2</option>
           <option value="number-3">3</option>
-          <option value="number-4">4</option>
+          <option value="number-4" selected>4</option>
           <option value="number-5">6</option>
           <option value="number-6">8</option>
         </select>
@@ -337,7 +340,8 @@
         </ul>
       </nav>
       <a href="tel:+78128121212" class="contact-phone">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/"><img src="" alt="Логотип HTML Academy" class="footer__logo"></a>
+      <a href="https://htmlacademy.ru/"><img src="./img/logo-htmlacademy.svg" alt="Логотип HTML Academy" class="footer__logo" width="115px"
+          height="34px"></a>
     </section>
   </footer>
 </body>

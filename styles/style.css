@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(fonts/ptsans-400.woff2) format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,11 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(fonts/ptsans-700.woff2) format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -22,6 +26,14 @@ body {
   color: #333333;
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .hidden {
@@ -125,36 +137,41 @@ body {
 }
 
 /* HOTEL */
-.hotel__content{
-    text-align: center;
+.hotel__content {
+  text-align: center;
 }
-.hotel__title{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+
+.hotel__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
-.hotel__description{
-    font-size: 22px;
-    line-height: 26px;
+
+.hotel__description {
+  font-size: 22px;
+  line-height: 26px;
 }
-.hotel__link{
-    background-color: #756257;
-    padding: 15px 150px;
-    font-size: 20px;
-    line-height: 36px;
-    border-radius: 10px;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
+
+.hotel__link {
+  background-color: #756257;
+  padding: 15px 150px;
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
 }
+
 /* MAILING */
-.mailing{
+.mailing {
   background-image: url("../img/mailing-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-.mailing__email{
+
+.mailing__email {
   border-radius: 10px 0px 0px 10px;
   font-size: 18px;
   line-height: 26px;
@@ -162,10 +179,11 @@ body {
   width: 600px;
   height: 60px;
 }
-.mailing__btn{
+
+.mailing__btn {
   border-radius: 0 10px 10px 0;
   background-color: #83B3D3;
-  border:none;
+  border: none;
   color: white;
   font-weight: 700;
   font-size: 20px;
@@ -174,12 +192,155 @@ body {
   height: 60px;
   text-transform: uppercase;
 }
-.mailing__title{
+
+.mailing__title {
   color: white;
 }
-.mailing__description{
+
+.mailing__description {
   color: white;
 }
-.mailing__content{
+
+.mailing__content {
   text-align: center;
+}
+
+/*  */
+
+
+
+
+
+
+
+/* CATALOG */
+.catalog-header {
+  background-image: url("../img/header-catalog-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: white;
+}
+
+.catalog-header__title {
+  font-size: 60px;
+  line-height: 77.64px;
+}
+
+/* BREADCRUMBS */
+.breadcrumbs__link {
+  color: white;
+  font-size: 16px;
+  line-height: 20.7px;
+}
+
+/* POLZUNOK */
+.polzunok-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.88px;
+}
+
+/* CATALOG FILTER */
+.catalog-filter__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.88px;
+}
+
+.catalog-filter__field {
+  border: none;
+}
+
+.catalog-filter-btn {
+  font-weight: 700;
+  background-color: #83B3D3;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 20.7px;
+}
+
+.catalog-filter-btn--reset {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.29px;
+}
+
+/* HOSTEL ROLL */
+.hostel-roll-filter {
+  color: black;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23.29px;
+  padding: 12px 20px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.hostel-number {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38.82px;
+}
+
+.hostel-card-link {
+  color: black;
+}
+
+.hostel-info__extra {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #756257;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 10px;
+  color: white;
+}
+
+.hostel-raintg__number {
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+
+.hostel-roll-more {
+  font-size: 20px;
+  line-height: 25.88px;
+  font-weight: 700;
+  color: white;
+  background-color: #83B3D3;
+  border-radius: 4px;
+  border: none;
+  margin: 30px 0 30px 0;
+  padding: 17px 0;
+}
+
+.hostel-more-cont {
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+/* PAGINATION */
+.pagination-link {
+  color: white;
+  background-color: #83B3D3;
+  font-size: 20px;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: black;
+}
+
+.contol-hostel-select {
+  border-radius: 4px;
+  border: 2px solid #E6E6E6;
 }

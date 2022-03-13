@@ -9,8 +9,8 @@
 
 <body>
   <header class="header">
-    <nav class="navigation-header">
-      <ul class="navigation">
+    <nav class="navigation">
+      <ul class="navigation-list">
         <li class="navigation__item">
           <img src="./img/header-logo.svg" alt="Sedona" class="navigation__logo" width="139px" height="70px">
         </li>
@@ -24,15 +24,13 @@
           <a href="#" class="navigation__link">Гостиницы</a>
         </li>
       </ul>
-    </nav>
-    <nav class="header-navigation">
-      <ul class="navigation">
+      <ul class="navigation-user">
         <li class="navigation__item">
-          <a href="index.html" class="navigation__link navigation__user"><span class="hidden">Поиск</span>
+          <a href="index.html" class="navigation__link navigation__user"><img src="/img/header-search.svg" alt="Поиск">
           </a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__user"><span class="hidden">Избранное</span></a>
+          <a href="#" class="navigation__link navigation__user"><img src="/img/header-favorite.svg" alt="Избранное"></a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__button">Хочу сюда!</a>
@@ -42,10 +40,10 @@
   </header>
   <main class="main">
     <h1 class="hidden">Sedona</h1>
-    <div class="main-logo">
-      <img src="./img/logo.svg" alt="Sedona" class="logo" width="458px" height="352px">
-    </div>
     <section class="description">
+      <div class="main-logo">
+        <img src="./img/logo.svg" alt="Sedona" class="logo" width="458px" height="352px">
+      </div>
       <h2 class="hidden">Описание</h2>
       <h3 class="description__title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h3>
@@ -54,7 +52,7 @@
     <section class="cause-1">
       <h2 class="hidden">Первая причина</h2>
       <div class="cause cause--1-2">
-        <h3 class="cause__title">Настоящий городок</h3>
+        <h3 class="cause__title cause__title--cause-1">Настоящий городок</h3>
         <p class="cause__number">- №1 -</p>
         <p class="cause__description">Седона — не аттракцион для туристов, там течёт
           своя жизнь</p>
@@ -96,31 +94,31 @@
       <img src="./img/causes-photo2.jpg" alt="Мост дьявола" class="cause-2__wallpaper">
       <div class="cause cause--1-2">
         <h3 class="cause__title">Там есть мость дьявола</h3>
-        <p class="cause__number">№2</p>
+        <p class="cause__number">- №2 -</p>
         <p class="cause__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
       </div>
     </section>
     <section class="other-causes">
       <h2 class="hidden">Остальные причины</h2>
-      <ul class="cause">
+      <ul class="cause-list">
         <li class="cause__item cause--3-5">
-          <h3>Небольшая площадь</h3>
-          <p class="cause__number">№3</p>
+          <h3 class="cause__title cause__title--other">Небольшая площадь</h3>
+          <p class="cause__number">- №3 -</p>
           <p class="cause__description">
             Все достопримечательности
             находятся очень близко
           </p>
         </li>
         <li class="cause__item cause--4">
-          <h3>Красивая дорога</h3>
-          <p class="cause__number">№4</p>
+          <h3 class="cause__title cause__title--other">Красивая дорога</h3>
+          <p class="cause__number">- №4 -</p>
           <p class="cause__description">
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
         <li class="cause__item cause--3-5">
-          <h3>Мало туристов</h3>
-          <p class="cause__number">№5</p>
+          <h3 class="cause__title cause__title--other">Мало туристов</h3>
+          <p class="cause__number">- №5 -</p>
           <p class="cause__description">
             Большинство едет в Гранд Каньон и толпится там
           </p>
@@ -158,19 +156,14 @@
       <nav class="social-links">
         <ul class="social">
           <li class="social__item">
-            <span class="hidden">
-              <a href="#">Twitter</a>
-            </span>
+            <a href="#"><img src="/img/footer-twitter.svg" alt="Twitter"></a>
           </li>
           <li class="social__item">
-            <span class="hidden">
-              <a href="#">Facebook</a>
-            </span>
+            <a href="#"><img src="/img/footer-facebook.svg" alt="Facebook"></a>
           </li>
           <li class="social__item">
-            <span class="hidden">
-              <a href="#">Youtube</a>
-            </span>
+            <a href="#"><img src="/img/footer-youtube.svg" alt="Youtube"></a>
+          </li>
           </li>
         </ul>
       </nav>

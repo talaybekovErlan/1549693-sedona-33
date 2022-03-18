@@ -422,6 +422,7 @@ li {
   color: white;
   height: 408px;
   padding: 50px 71px 83px;
+  margin: 0 auto;
 }
 
 .catalog-header__title {
@@ -572,8 +573,11 @@ li {
   background-color: white;
 }
 .hostel-roll{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px 10px;
+  grid-template-rows: 438px 438px;
+  margin: 53px 72px 34px;
 }
 .hostel-roll-filter {
   padding: 42px 72px 53px;
@@ -610,11 +614,13 @@ li {
 .hostel-number {
   font-size: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   line-height: 38.82px;
+  margin: 0;
 }
 .hostel-card{
   padding: 20px 20px 30px;
-  margin-right: 18px;
+  margin: 0;
 }
 .hostel-card-link {
   color: black;
@@ -635,14 +641,30 @@ li {
   display: flex;
   flex-direction: column;
 }
+.hostel-card-rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hostel-buy{
   display: flex;
   flex-direction: column;
 }
+.hostel-buy__favorite{
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 9px 20px 10px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
 .hostel-extra{
   display: flex;
 }
-.hostel-raintg__number {
+.hostel-rating__number {
   background-color: #F2F2F2;
   text-transform: uppercase;
 }

@@ -22,6 +22,10 @@ html {
   height: 100%;
 }
 
+input {
+  outline: none;
+}
+
 body {
   min-height: 100%;
   display: flex;
@@ -330,9 +334,11 @@ li {
   height: 60px;
   text-transform: uppercase;
 }
-.mailing__form{
+
+.mailing__form {
   display: flex;
 }
+
 .mailing__title {
   color: white;
   margin-top: 0;
@@ -363,24 +369,28 @@ li {
   margin: 0 auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-.footer__content{
+
+.footer__content {
   margin: 0 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 120px;
 }
-.social{
+
+.social {
   display: flex;
   flex-direction: row;
   width: 170px;
   justify-content: space-between;
 }
-.contact-phone{
+
+.contact-phone {
   color: black;
   font-size: 40px;
   line-height: 40px;
 }
+
 /*  */
 
 
@@ -401,6 +411,8 @@ li {
 /*PAGE   CATALOG */
 .catalog {
   flex-grow: 1;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .catalog-header {
@@ -408,18 +420,34 @@ li {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: white;
+  height: 408px;
+  padding: 50px 71px 83px;
 }
 
 .catalog-header__title {
   font-size: 60px;
   line-height: 77.64px;
+  margin-top: 0;
 }
 
 /* BREADCRUMBS */
+.breadcrumbs {
+  display: flex;
+
+}
+
+.breadcrumbs-next {
+  opacity: 50%;
+}
+
 .breadcrumbs__link {
   color: white;
   font-size: 16px;
   line-height: 20.7px;
+}
+
+.breadcrumbs__item {
+  margin-right: 10px;
 }
 
 /* POLZUNOK */
@@ -427,9 +455,71 @@ li {
   font-size: 20px;
   font-weight: 700;
   line-height: 25.88px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.polzunok-input-cont {
+  display: flex;
+  margin-top: 34px;
+}
+
+.polzunok-input--style {
+  background-color: transparent;
+  padding: 12px 19px 12px 13px;
+  text-align: right;
+  width: 143px;
+  border: 2px solid white;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+
+}
+
+.polzunok-input__left {
+  border-radius: 4px 0px 0px 4px;
+  border-width: 2px 1px 2px 2px;
+}
+
+.polzunok-input__right {
+  border-radius: 0px 4px 4px 0px;
+  border-width: 2px 2px 2px 1px;
+}
+
+/* PLACE HOLDER STYLE */
+::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 0.3;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 /* CATALOG FILTER */
+.catalog-filter-home {
+  display: flex;
+  
+}
+
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-filter__title {
   font-weight: 700;
   font-size: 20px;
@@ -438,6 +528,17 @@ li {
 
 .catalog-filter__field {
   border: none;
+  height: 151px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 30px;
+  width: 170px;
+}
+
+.catalog-filter-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .catalog-filter-btn {
@@ -449,6 +550,7 @@ li {
   color: white;
   text-transform: uppercase;
   line-height: 20.7px;
+  padding: 12px 35px;
 }
 
 .catalog-filter-btn--reset {
@@ -458,18 +560,51 @@ li {
   line-height: 23.29px;
 }
 
-/* HOSTEL ROLL */
-.hostel-roll-filter {
-  color: black;
+.catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95px;
 }
 
+/* HOSTEL ROLL */
+.hostel-cont{
+  background-color: white;
+}
+.hostel-roll{
+  display: flex;
+  flex-wrap: wrap;
+}
+.hostel-roll-filter {
+  padding: 42px 72px 53px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.hostel-roll-filter__view {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+.hostel-filter-btn{
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  border-radius: 4px;
+}
 .select-control {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23.29px;
   padding: 12px 20px;
+  margin-left: 193px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  width: 278px;
+  height: 47px;
 }
 
 .hostel-number {
@@ -477,7 +612,10 @@ li {
   font-weight: 700;
   line-height: 38.82px;
 }
-
+.hostel-card{
+  padding: 20px 20px 30px;
+  margin-right: 18px;
+}
 .hostel-card-link {
   color: black;
 }
@@ -493,7 +631,17 @@ li {
   padding: 10px;
   color: white;
 }
-
+.hostel-info{
+  display: flex;
+  flex-direction: column;
+}
+.hostel-buy{
+  display: flex;
+  flex-direction: column;
+}
+.hostel-extra{
+  display: flex;
+}
 .hostel-raintg__number {
   background-color: #F2F2F2;
   text-transform: uppercase;

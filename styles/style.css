@@ -46,11 +46,10 @@ a {
 ul {
   margin: 0;
   padding: 0;
-}
-
-li {
   list-style: none;
 }
+
+
 
 .hidden {
   display: none;
@@ -79,6 +78,7 @@ li {
   width: 515px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -86,6 +86,7 @@ li {
   justify-content: space-around;
   width: 265px;
   margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .navigation__link {
@@ -397,6 +398,7 @@ li {
   flex-direction: row;
   width: 170px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact-phone {

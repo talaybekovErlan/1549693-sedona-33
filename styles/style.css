@@ -464,7 +464,6 @@ ul {
 /* BREADCRUMBS */
 .breadcrumbs {
   display: flex;
-
 }
 
 .breadcrumbs-next {
@@ -482,17 +481,26 @@ ul {
 }
 
 /* POLZUNOK */
+.polzunok{
+  display: grid;
+  grid-template-columns: 287px 160px;
+  grid-template-rows: 26px 48px 23px;
+  gap: 20px 81px;
+  margin-top: 30px;
+}
 .polzunok-title {
+  grid-row-start: 1;
   font-size: 20px;
   font-weight: 700;
   line-height: 25.88px;
   margin: 0;
-  margin-top: 30px;
+  align-self:flex-end ;
 }
 
 .polzunok-input-cont {
   display: flex;
-  margin-top: 34px;
+  align-self: flex-start;
+  grid-row-start: 2;
 }
 
 .polzunok-input--style {
@@ -516,7 +524,14 @@ ul {
   border-radius: 0px 4px 4px 0px;
   border-width: 2px 2px 2px 1px;
 }
-
+.catalog-filter-btns {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
 /* PLACE HOLDER STYLE */
 ::-webkit-input-placeholder {
   color: #FFFFFF;
@@ -542,13 +557,15 @@ ul {
 
 /* CATALOG FILTER */
 .catalog-filter-home {
-  display: flex;
-  
+  display: grid;
+  grid-template-columns: 150px 150px;
+  column-gap: 67px;
 }
 
 .catalog-filter {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 360px 287px;
+  column-gap: 167px;
 }
 
 .catalog-filter__title {
@@ -566,11 +583,7 @@ ul {
   width: 170px;
 }
 
-.catalog-filter-btns {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
+
 
 .catalog-filter-btn {
   font-weight: 700;
@@ -586,6 +599,7 @@ ul {
 
 .catalog-filter-btn--reset {
   background-color: transparent;
+  text-transform: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 23.29px;
@@ -612,16 +626,18 @@ ul {
 .hostel-roll-filter {
   padding: 42px 72px 53px;
   color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: white;
+}
+.hostel-roll-filter-grid{
+  display: grid;
+  grid-template-columns: 340px 287px 160px;
+  column-gap: 81px;
 }
 
 .hostel-roll-filter__view {
-  display: flex;
-  justify-content: space-between;
-  width: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  column-gap: 8px;
 }
 .hostel-filter-btn{
   width: 48px;
@@ -634,11 +650,14 @@ ul {
   font-size: 18px;
   line-height: 23.29px;
   padding: 12px 20px;
-  margin-left: 193px;
+  margin-left: 111px;
+  margin-right: 127px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   width: 278px;
   height: 47px;
+  display: flex;
+  
 }
 
 .hostel-number {

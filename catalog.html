@@ -35,7 +35,7 @@
           <a href="#" class="navigation__link navigation__user"><img src="/img/header-favorite.svg" alt="Избранное"></a>
         </li>
         <li class="navigation__item">
-          <button href="#" class="navigation__button">Хочу сюда!</button>
+          <a href="#" class="navigation__button">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -109,32 +109,34 @@
             <input type="text" class="polzunok-input__left polzunok-input--style" placeholder="от" />
             <input type="text" class="polzunok-input__right polzunok-input--style" placeholder="до" />
           </div>
-        </div>
-        <div class="catalog-filter-btns">
-          <button type="submit" class="catalog-filter-btn">Применить</button>
-          <button type="submit" class="catalog-filter-btn catalog-filter-btn--reset">Cбросить</button>
+          <div class="catalog-filter-btns">
+            <button type="submit" class="catalog-filter-btn">Применить</button>
+            <button type="submit" class="catalog-filter-btn catalog-filter-btn--reset">Cбросить</button>
+          </div>
         </div>
       </div>
     </header>
     <section class="hostel-cont">
       <div class="hostel-roll-filter">
-        <h2 class="hidden">Список гостиниц</h2>
-        <p class="hostel-number">Найдено гостиниц: 38</p>
-        <select class="select-control">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap" selected>Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <div class="hostel-roll-filter__view">
-          <button type="submit" class="hostel-filter-btn">
-            <img src="/img/btn-show-all.svg" alt="Полностью">
-          </button>
-          <button class="hostel-filter-btn" href="#" type="submit">
-            <img src="/img/btn-cards.svg" alt="Карточки">
-          </button>
-          <button href="#" class="hostel-filter-btn" type="submit">
-            <img src="/img/btn-list.svg" alt="Список">
-          </button>
+        <div class="hostel-roll-filter-grid">
+          <h2 class="hidden">Список гостиниц</h2>
+          <p class="hostel-number">Найдено гостиниц: 38</p>
+          <select class="select-control">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap" selected>Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <div class="hostel-roll-filter__view">
+            <button type="submit" class="hostel-filter-btn">
+              <img src="/img/btn-show-all.svg" alt="Полностью">
+            </button>
+            <button class="hostel-filter-btn" href="#" type="submit">
+              <img src="/img/btn-cards.svg" alt="Карточки">
+            </button>
+            <button href="#" class="hostel-filter-btn" type="submit">
+              <img src="/img/btn-list.svg" alt="Список">
+            </button>
+          </div>
         </div>
       </div>
       </div>

@@ -116,144 +116,88 @@
         </div>
       </div>
     </header>
-    <section class="hostel-cont">
-      <div class="hostel-roll-filter">
-        <div class="hostel-roll-filter-grid">
-          <h2 class="hidden">Список гостиниц</h2>
-          <p class="hostel-number">Найдено гостиниц: 38</p>
-          <select class="select-control">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap" selected>Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
-          <div class="hostel-roll-filter__view">
-            <button type="submit" class="hostel-filter-btn">
-              <img src="/img/btn-show-all.svg" alt="Полностью">
-            </button>
-            <button class="hostel-filter-btn" href="#" type="submit">
-              <img src="/img/btn-cards.svg" alt="Карточки">
-            </button>
-            <button href="#" class="hostel-filter-btn" type="submit">
-              <img src="/img/btn-list.svg" alt="Список">
-            </button>
+    <section class="hostel-roll">
+      <h2 class="hidden">Список гостиниц</h2>
+      <div class="roll-filter">
+        <p class="roll-filter-title">Найдено гостиниц: 38</p>
+        <select class="roll-filter-select">
+          <option value="cheep">Самые дешёвые</option>
+          <option value="expensive">Самые дорогие</option>
+          <option value="best">Самые лучшие</option>
+        </select>
+        <div class="roll-view">
+          <button class="roll-view__grid roll-view__btn">
+            <img src="/img/btn-show-all.svg" alt="Сетка" width="16px" height="14px">
+          </button>
+          <button class="roll-view__cards roll-view__btn">
+            <img src="/img/btn-cards.svg" alt="Карточка" width="16px" height="14px">
+          </button>
+          <button class="roll-view__list roll-view__btn">
+            <img src="/img/btn-list.svg" alt="Список" width="16px" height="14px">
+          </button>
+        </div>
+      </div>
+      <ul class="hostel-list">
+        <li class="hostel-card">
+          <img src="/img/amara-resort.jpg" alt="Amara Resort & Spa" class="card-img" width="300px" height="206px">
+          <p class="card-title">Amara Resort & Spa</p>
+          <p class="hostel-type">Гостиница</p>
+          <p class="hostel-cost">От 4000 ₽</p>
+          <a class="btn-extra" href="#">Подробнее</a>
+          <button class="btn-favorite">В избранное</button>
+          <div class="rating-stars">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
           </div>
-        </div>
-      </div>
-      </div>
-      <div class="hostel-roll">
-        <div class="hostel-card amara-resort-and-spa">
-          <a class="hostel-card-link" href="product.html">
-            <img class="hostel-image" src="./img/amara-resort.jpg" width="300px" height="206px">
-            <h3 class="hostel-title">Amara Resort & Spa</h3>
-          </a>
-          <ul class="hostels-list">
-            <li class="hostel-extra">
-              <div class="hostel-info">
-                <p class="hostel-info__type">Гостиница</p>
-                <a href="#" class="hostel-info__extra">Подробнее</a>
-              </div>
-              <div class="hostel-buy">
-                <p class="hostel-buy__cost">От 4000 ₽</p>
-                <button class="hostel-buy__favorite">В Избранное</button>
-              </div>
-            </li>
-            <li class="hostel-card-rating">
-              <div class="rating-stars">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="" alt="">
-              </div>
-              <p class="rating__number">Рейтинг: 8,5</p>
-            </li>
-          </ul>
-        </div>
-        <div class="hostel-card desert-quail-inn">
-          <a class="hostel-card-link" href="product.html">
-            <img class="hostel-image" src="./img/desert-quail.jpg" width="300px" height="206px">
-            <h3 class="hostel-title">Desert Quail Inn</h3>
-          </a>
-          <ul class="hostel-list">
-            <li class="hostel-extra">
-              <div class="hostel-info">
-                <p class="hostel-info__type">Гостиница</p>
-                <a href="#" class="hostel-info__extra">Подробнее</a>
-              </div>
-              <div class="hostel-buy">
-                <p class="hostel-buy__cost">От 4000 ₽</p>
-                <button class="hostel-buy__favorite">В Избранное</button>
-              </div>
-            </li>
-            <li class="hostel-card-rating">
-              <div class="rating-stars">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="">
-                <img src="">
-              </div>
-              <p class="rating__number">Рейтинг: 8,9</p>
-            </li>
-          </ul>
-        </div>
-        <div class="hostel-card villas-at-poco-diablo">
-          <a class="hostel-card-link" href="product.html">
-            <img class="hostel-image" src="./img/villas-at-poco.jpg" width="300px" height="206px">
-            <h3 class="hostel-title">Villas at Poco Diablo</h3>
-          </a>
-          <ul class="hostel-list">
-            <li class="hostel-extra">
-              <div class="hostel-info">
-                <p class="hostel-info__type">Гостиница</p>
-                <a href="#" class="hostel-info__extra">Подробнее</a>
-              </div>
-              <div class="hostel-buy">
-                <p class="hostel-buy__cost">От 4000 ₽</p>
-                <button class="hostel-buy__favorite">В Избранное</button>
-              </div>
-            </li>
-            <li class="hostel-card-rating">
-              <div class="rating-stars">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="">
-                <img src="">
-                <img src="">
-              </div>
-              <p class="rating__number">Рейтинг: 9,2</p>
-            </li>
-          </ul>
-        </div>
-        <div class="hostel-card greentree-inn">
-          <a class="hostel-card-link" href="product.html">
-            <img class="hostel-card-image" src="./img/green-tree.jpg" width="300px" height="206px">
-            <h3 class="hostel-card-title">GreenTree Inn</h3>
-          </a>
-          <ul class="hostel-list">
-            <li class="hostel-extra">
-              <div class="hostel-info">
-                <p class="hostel-info__type">Гостиница</p>
-                <a href="#" class="hostel-info__extra">Подробнее</a>
-              </div>
-              <div class="hostel-buy">
-                <p class="hostel-buy__cost">От 4000 ₽</p>
-                <button class="hostel-buy__favorite">В Избранное</button>
-              </div>
-            </li>
-            <li class="hostel-card-rating">
-              <div class="rating-stars">
-                <img src="/img/star-rating.svg">
-                <img src="/img/star-rating.svg">
-                <img src="">
-                <img src="">
-                <img src="">
-              </div>
-              <p class="rating__number">Рейтинг: 9,2</p>
-            </li>
-          </ul>
-        </div>
-      </div>
+          <p class="rating-number">Рейтинг: 8,5</p>
+        </li>
+        <li class="hostel-card">
+          <img src="/img/desert-quail.jpg" alt="Desert Quail Inn" class="card-img" width="300px" height="206px">
+          <p class="card-title">Desert Quail Inn</p>
+          <p class="hostel-type">Гостиница</p>
+          <p class="hostel-cost">От 4000 ₽</p>
+          <a class="btn-extra" href="#">Подробнее</a>
+          <button class="btn-favorite">В избранное</button>
+          <div class="rating-stars">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+          </div>
+          <p class="rating-number">Рейтинг: 8,9</p>
+        </li>
+        <li class="hostel-card">
+          <img src="/img/villas-at-poco.jpg" alt="Villas at Poco Diablo" class="card-img" width="300px" height="206px">
+          <p class="card-title">Villas at Poco Diablo</p>
+          <p class="hostel-type">Гостиница</p>
+          <p class="hostel-cost">От 4000 ₽</p>
+          <a class="btn-extra" href="#">Подробнее</a>
+          <button class="btn-favorite btn-favorite--active">В избранном</button>
+          <div class="rating-stars">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+          </div>
+          <p class="rating-number">Рейтинг: 8,5</p>
+        </li>
+        <li class="hostel-card">
+          <img src="/img/amara-resort.jpg" alt="Amara Resort & Spa" class="card-img" width="300px" height="206px">
+          <p class="card-title">Amara Resort & Spa</p>
+          <p class="hostel-type">Гостиница</p>
+          <p class="hostel-cost">От 4000 ₽</p>
+          <a class="btn-extra" href="#">Подробнее</a>
+          <button class="btn-favorite">В избранное</button>
+          <div class="rating-stars">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+            <img src="/img/star-rating.svg" class="rating-stars__star">
+          </div>
+          <p class="rating-number">Рейтинг: 8,5</p>
+        </li>
+      </ul>
       <div class="hostel-more-cont">
         <button class="hostel-roll-more" type="submit">Загрузить ещё</button>
       </div>
@@ -291,6 +235,7 @@
         </div>
       </div>
     </section>
+
     <section class="mailing mailing--catalog">
       <h2 class="hidden">Рассылка</h2>
       <div class="mailing__content mailing__content--catalog">
@@ -306,24 +251,26 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--catalog">
     <section class="footer__content">
-      <nav class="social-links">
-        <ul class="social">
-          <li class="social__item">
-            <a href="#"><img src="/img/footer-twitter.svg" alt="Twitter"></a>
-          </li>
-          <li class="social__item">
-            <a href="#"><img src="/img/footer-facebook.svg" alt="Facebook"></a>
-          </li>
-          <li class="social__item">
-            <a href="#"><img src="/img/footer-youtube.svg" alt="Youtube"></a>
-          </li>
-          </li>
-        </ul>
-      </nav>
-      <a href="tel:+78128121212" class="contact-phone">+7 (812) 812-12-12</a>
-      <img src="./img/logo-htmlacademy.svg" alt="HTML-Academy" class="footer__logo">
+      <div class="footer__grid-cont">
+        <nav class="social-links">
+          <ul class="social">
+            <li class="social__item">
+              <a href="#"><img src="/img/footer-twitter.svg" alt="Twitter"></a>
+            </li>
+            <li class="social__item">
+              <a href="#"><img src="/img/footer-facebook.svg" alt="Facebook"></a>
+            </li>
+            <li class="social__item">
+              <a href="#"><img src="/img/footer-youtube.svg" alt="Youtube"></a>
+            </li>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+78128121212" class="contact-phone">+7 (812) 812-12-12</a>
+        <img src="./img/logo-htmlacademy.svg" alt="HTML-Academy" class="footer__logo">
+      </div>
     </section>
   </footer>
 </body>

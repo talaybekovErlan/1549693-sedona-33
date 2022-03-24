@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 
 <body>
   <header class="header">
     <nav class="navigation">
-      <ul class="navigation-list">
+      <ul class="navigation__list">
         <li class="navigation__item">
-          <img src="./img/header-logo.svg" alt="Sedona" class="navigation__logo" width="139px" height="70px">
+          <img src="/img/header-logo.svg" alt="Sedona" class="navigation__logo" width="139px" height="70px">
         </li>
         <li class="navigation__item">
           <a href="index.html" class="navigation__link">Главная</a>
@@ -24,13 +24,14 @@
           <a href="catalog.html" class="navigation__link">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-user">
+      <ul class="navigation__user">
         <li class="navigation__item">
-          <a href="index.html" class="navigation__link navigation__user"><img src="/img/header-search.svg" alt="Поиск">
+          <a href="index.html" class="navigation-link navigation-link--user">
+            <img src="/img/header-search.svg" alt="Поиск">
           </a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link navigation__user"><img src="/img/header-favorite.svg" alt="Избранное"></a>
+          <a href="#" class="navigation__link"><img src="/img/header-favorite.svg" alt="Избранное"></a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__button">Хочу сюда!</a>
@@ -42,7 +43,7 @@
     <h1 class="hidden">Sedona</h1>
     <section class="description">
       <div class="main-logo">
-        <img src="./img/logo.svg" alt="Sedona" class="logo" width="458px" height="352px">
+        <img src="/img/logo.svg" alt="Sedona" class="logo" width="458px" height="352px">
       </div>
       <h2 class="hidden">Описание</h2>
       <h3 class="description__title">Седона — небольшой городок в Аризоне,
@@ -53,37 +54,37 @@
       <section class="cause-1">
         <h2 class="hidden">Первая причина</h2>
         <div class="cause cause--1-2">
-          <h3 class="cause__title cause__title--cause-1">Настоящий городок</h3>
+          <h3 class="cause__title">Настоящий городок</h3>
           <p class="cause__number">- №1 -</p>
           <p class="cause__description">Седона — не аттракцион для туристов, там течёт
             своя жизнь</p>
         </div>
-        <img src="./img/causes-photo1.jpg" alt="Город" class="cause-1__wallpaper" width="800px" height="384px">
+        <img src="/img/causes-photo1.jpg" alt="Город" class="cause-1__wallpaper" width="800px" height="384px">
       </section>
-      <section class="advantages">
+      <section class="">
         <h2 class="hidden">Преимущества</h2>
         <ul class="advantages">
-          <li class="advantages__item advantages__item--1-3">
-            <img src="./img/advantage-1.svg" width="75" height="72" class="advantages__icon">
-            <h3 class="advantages__title">Жильё</h3>
-            <p class="advantages__description">
+          <li class="advantage advantage--1-3">
+            <img src="/img/advantage-1.svg" width="75" height="72" class="advantage__icon">
+            <h3 class="advantage__title">Жильё</h3>
+            <p class="advantage__description">
               Рекомендуем пожить
               в настоящем мотеле,
               всё как в кино!
             </p>
           </li>
-          <li class="advantages__item">
-            <img src="./img/advantage-2.svg" width="74" height="70" class="advantages__icon">
-            <h3 class="advantages__title">Еда</h3>
-            <p class="advantages__description">
+          <li class="advantage">
+            <img src="/img/advantage-2.svg" width="74" height="70" class="advantage__icon">
+            <h3 class="advantage__title">Еда</h3>
+            <p class="advantage__description">
               Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="advantages__item advantages__item--1-3">
-            <img src="./img/advantage-3.svg" width="64" height="76" class="advantages__icon">
-            <h3 class="advantages__title">Сувениры</h3>
-            <p class="advantages__description">
+          <li class="advantage advantage--1-3">
+            <img src="/img/advantage-3.svg" width="64" height="76" class="advantage__icon">
+            <h3 class="advantage__title">Сувениры</h3>
+            <p class="advantage__description">
               Не только китайского,
               но и настоящего местного производства!
             </p>
@@ -92,7 +93,7 @@
       </section>
       <section class="cause-2">
         <h2 class="hidden">Вторая причина</h2>
-        <img src="./img/causes-photo2.jpg" alt="Мост дьявола" class="cause-2__wallpaper">
+        <img src="/img/causes-photo2.jpg" alt="Мост дьявола" class="cause-2__wallpaper">
         <div class="cause cause--1-2">
           <h3 class="cause__title">Там есть мость дьявола</h3>
           <p class="cause__number">- №2 -</p>
@@ -102,23 +103,23 @@
       <section class="other-causes">
         <h2 class="hidden">Остальные причины</h2>
         <ul class="cause-list">
-          <li class="cause__item cause--3-5">
-            <h3 class="cause__title cause__title--other">Небольшая площадь</h3>
+          <li class="cause cause--3-5">
+            <h3 class="cause__title">Небольшая площадь</h3>
             <p class="cause__number">- №3 -</p>
             <p class="cause__description">
               Все достопримечательности
               находятся очень близко
             </p>
           </li>
-          <li class="cause__item cause--4">
-            <h3 class="cause__title cause__title--other">Красивая дорога</h3>
+          <li class="cause cause--4">
+            <h3 class="cause__title">Красивая дорога</h3>
             <p class="cause__number">- №4 -</p>
             <p class="cause__description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="cause__item cause--3-5">
-            <h3 class="cause__title cause__title--other">Мало туристов</h3>
+          <li class="cause cause--3-5">
+            <h3 class="cause__title">Мало туристов</h3>
             <p class="cause__number">- №5 -</p>
             <p class="cause__description">
               Большинство едет в Гранд Каньон и толпится там

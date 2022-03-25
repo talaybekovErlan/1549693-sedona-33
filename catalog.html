@@ -17,13 +17,13 @@
           <img src="/img/header-logo.svg" alt="Sedona" class="navigation__logo" width="139px" height="70px">
         </li>
         <li class="navigation__item">
-          <a href="index.html" class="navigation-link">Главная</a>
+          <a href="index.html" class="navigation__link">Главная</a>
         </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">О Седоне</a>
         </li>
         <li class="navigation__item">
-          <a href="catalog.html" class="navigation-link">Гостиницы</a>
+          <a href="catalog.html" class="navigation__link">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation__user">
@@ -82,7 +82,7 @@
           </fieldset>
           <fieldset class="home__field">
             <legend class="home__title">Тип жилья:</legend>
-            <ul class="home-list">
+            <ul class="home__list">
               <li class="home__item">
                 <label class="control">
                   <input type="radio" class="control-input" name="home-type" value="hotel" checked>
@@ -110,6 +110,7 @@
             <input type="text" class="range__left" placeholder="от" />
             <input type="text" class="range__right" placeholder="до" />
           </div>
+          <input type="range" class="range__input">
           <div class="catalog-filter-btns">
             <button type="submit" class="catalog-filter-btn">Применить</button>
             <button type="submit" class="catalog-filter-btn catalog-filter-btn--reset">Cбросить</button>

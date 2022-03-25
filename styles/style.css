@@ -389,7 +389,20 @@ ul {
   font-size: 22px;
   padding-bottom: 46px;
 }
+.mailing__content .mailing__title{
+  color: white;
+}
+.mailing__content .mailing__description{
+  color: white;
+}
 
+.mailing--catalog .mailing__description{
+  color: black;
+}
+
+.mailing--catalog .mailing__title{
+  color: black;
+}
 .mailing__content {
   display: flex;
   align-items: center;
@@ -504,13 +517,12 @@ ul {
   margin-right: 10px;
 }
 
-/* POLZUNOK */
+/* RANGE */
 .range {
   display: grid;
   grid-template-columns: 287px 160px;
   grid-template-rows: 26px 48px 23px;
   gap: 20px 81px;
-  margin-top: 30px;
 }
 
 .range__title {
@@ -527,7 +539,11 @@ ul {
   align-self: flex-start;
   grid-row-start: 2;
 }
-
+.range__input{
+  width: 287px;
+  grid-row-start: 3;
+  margin: 0;
+}
 
 .range__left {
   border-radius: 4px 0px 0px 4px;
@@ -599,11 +615,17 @@ ul {
   grid-template-columns: 360px 287px;
   column-gap: 167px;
 }
-
+.home__list{
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .home__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 25.88px;
+  padding-bottom: 30px;
 }
 
 .home__field {

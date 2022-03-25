@@ -39,6 +39,8 @@ body {
   padding: 0px;
 }
 
+
+
 a {
   text-decoration: none;
 }
@@ -63,9 +65,8 @@ ul {
   width: 1200px;
   height: 70px;
   margin: 0 auto;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   background-color: white;
-
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -97,6 +98,16 @@ ul {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+}
+
+.navigation__item:hover {
+  border-bottom: 2px solid#756257;
+  box-sizing: border-box;
+}
+
+.navigation__item .navigation__user:hover {
+  border: none;
 }
 
 .navigation__logo {
@@ -166,6 +177,7 @@ ul {
   width: 700px;
   text-align: center;
   padding-top: 63px;
+  margin: 0;
 }
 
 .description__causes {
@@ -173,6 +185,8 @@ ul {
   width: 700px;
   text-align: center;
   padding-bottom: 80px;
+  margin-bottom: 0;
+  margin-top: 31px;
 }
 
 /* CAUSE */
@@ -203,6 +217,7 @@ ul {
   font-weight: 700;
   color: white;
   text-transform: uppercase;
+  margin: 0;
 }
 
 
@@ -283,6 +298,10 @@ ul {
   line-height: 21px;
 }
 
+.other-causes .cause__description {
+  width: 250px;
+}
+
 /* HOTEL */
 .hotel {}
 
@@ -301,12 +320,14 @@ ul {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0px;
+  margin: 0;
 }
 
 .hotel__description {
   font-size: 22px;
   line-height: 26px;
+  margin-top: 29px;
+  margin-bottom: 56px;
 }
 
 .hotel__link {
@@ -334,18 +355,10 @@ ul {
   color: black;
 }
 
-.mailing__title {
-  color: black;
-}
-
-.mailing__description {
-  color: black;
-}
-
-
-.mailing--catalog .mailing__email{
+.mailing--catalog .mailing__email {
   background-color: #E6E6E6;
 }
+
 .mailing__email::placeholder {
   color: black;
 }
@@ -378,31 +391,37 @@ ul {
 }
 
 .mailing__title {
-  margin-top: 0;
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
+  color: black;
 }
 
 .mailing__description {
+  margin-top: 29px;
+  margin-bottom: 46px;
   font-size: 22px;
-  padding-bottom: 46px;
-}
-.mailing__content .mailing__title{
-  color: white;
-}
-.mailing__content .mailing__description{
-  color: white;
-}
-
-.mailing--catalog .mailing__description{
   color: black;
 }
 
-.mailing--catalog .mailing__title{
+.mailing__content .mailing__title {
+  color: white;
+}
+
+.mailing__content .mailing__description {
+  color: white;
+}
+
+.mailing--catalog .mailing__description {
   color: black;
 }
+
+.mailing--catalog .mailing__title {
+  color: black;
+}
+
 .mailing__content {
   display: flex;
   align-items: center;
@@ -539,7 +558,8 @@ ul {
   align-self: flex-start;
   grid-row-start: 2;
 }
-.range__input{
+
+.range__input {
   width: 287px;
   grid-row-start: 3;
   margin: 0;
@@ -615,12 +635,14 @@ ul {
   grid-template-columns: 360px 287px;
   column-gap: 167px;
 }
-.home__list{
+
+.home__list {
   display: flex;
   height: 100%;
   justify-content: space-between;
   flex-direction: column;
 }
+
 .home__title {
   font-weight: 700;
   font-size: 20px;
@@ -828,8 +850,6 @@ ul {
   justify-content: space-between;
   margin: 0 72px;
 }
-
-.cause--3-5 .cause__title {}
 
 /* PAGINATION */
 .pagination {
